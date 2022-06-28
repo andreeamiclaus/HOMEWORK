@@ -147,16 +147,10 @@ i {
   aside {
     display: none;
   }
-  .trending-image-text {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   aside {
-    display: none;
-  }
-  .trending-image-text {
     display: none;
   }
 }
