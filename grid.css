@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h4 {
+  font-weight: 100;
+  text-align: start;
+  margin-left: 1rem;
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 1.5rem 0 1rem 7rem;
+}
+
+body {
+  color: #efefef;
+  padding: 1rem;
+  line-height: 1.4;
+  font-family: sans-serif;
+  background-color: #10141f;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+  color: #ffffff;
+}
+
+nav {
+  height: 5rem;
+  background-color: inherit;
+  display: flex;
+}
+
+.nav-search {
+  display: flex;
+  margin-left: 6rem;
+}
+
+.nav-search input {
+  padding: 1rem;
+  appearance: none;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: white;
+  background-color: inherit;
+  border: none;
+}
+
+#search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  color: white;
+  background-color: inherit;
+  border: none;
+}
+
+.trending-card {
+  --auto-grid-min-size: 30rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 0.5rem;
+  position: relative;
+}
+
+.trending-image {
+  max-width: 90%;
+  margin: auto;
+}
+
+.trending-image-text {
+  position: absolute;
+  top: 75%;
+  padding: 10px;
+}
+
+.grid-card {
+  --auto-grid-min-size: 18rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 3rem;
+}
+
+.grid-image {
+  margin-left: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.dish-description {
+  text-align: start;
+  margin-left: 1rem;
+  color: white;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  background-color: #161d2f;
+  height: 100vh;
+  width: 5rem;
+  border-radius: 20px;
+}
+
+aside .user-image {
+  position: relative;
+  top: 55%;
+  height: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+i {
+  display: flex;
+  flex-direction: column;
+  color: rgb(95, 112, 136);
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+#pizza-icon {
+  color: red;
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 760px) {
+  aside {
+    display: none;
+  }
+  .trending-image-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  .trending-image-text {
+    display: none;
+  }
+}
