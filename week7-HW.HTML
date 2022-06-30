@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+  </head>
+  <body>
+    <script>
+      var gameArray = ["rock", "paper", "scissors"];
+      var userChoice = gameArray[Math.floor(Math.random() * gameArray.length)];
+      console.log(userChoice);
+      var computerChoice =
+        gameArray[Math.floor(Math.random() * gameArray.length)];
+      console.log(computerChoice);
+
+      if (userChoice === computerChoice) {
+        console.log("It a tie");
+      } else if (userChoice === "rock" && computerChoice === "scissors") {
+        console.log(
+          `You won! your choice: ${userChoice}, wins against computer's choice: ${computerChoice} `
+        );
+      } else if (userChoice === "paper" && computerChoice === "rock") {
+        console.log(
+          `You won! your choice: ${userChoice}, wins against computer's choice: ${computerChoice} `
+        );
+      } else if (userChoice === "scissors" && computerChoice === "paper") {
+        console.log(
+          `You won! your choice: ${userChoice}, wins against computer's choice: ${computerChoice} `
+        );
+      } else {
+        console.log("You loose");
+      }
+    </script>
+  </body>
+</html>
